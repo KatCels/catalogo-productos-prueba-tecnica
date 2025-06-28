@@ -76,4 +76,4 @@ cd catalogo-productos
 
 ## 👤 Autor
 
-_Tu nombre aquí_
+_Katherine Celeste Camacho Galaviz_
