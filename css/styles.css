@@ -1,2 +1,162 @@
 /* Estilos base */
-body { font-family: Arial, sans-serif; }
+
+:root {
+  --bg-color: #f4f4f4;
+  --card-bg: #ffffff;
+  --text-color: #222;
+  --primary: #0077cc;
+  --accent: #f0a500;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --text-color: #f9f9f9;
+  --primary: #00bcd4;
+  --accent: #ff9800;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial' , sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* ---------- Botón de modo oscuro ---------- */
+#toggle-dark {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+#toggle-dark:hover {
+  background: var(--accent);
+}
+
+/* ---------- Filtros ---------- */
+#filters {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+#filters select,
+#filters input[type="range"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+/* ---------- Catálogo con Grid ---------- */
+#product-catalog {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  #product-catalog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  #product-catalog {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.product-card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-card button {
+  margin-top: 0.5rem;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+  background-color: var(--accent);
+}
+
+/* ---------- Carrito ---------- */
+#cart {
+  background-color: var(--card-bg);
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  margin-inline: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#cart ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+#cart li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#cart button {
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+#cart-total {
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: right;
+}
