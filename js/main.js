@@ -7,6 +7,11 @@ function renderCatalog(productList) {
   const catalog = document.getElementById("product-catalog");
   catalog.innerHTML = "";
 
+  if (productList.length === 0) {
+    catalog.innerHTML = "<p>No se encontraron productos.</p>";
+    return;
+  }
+
   productList.forEach(product => {
     const card = document.createElement("div");
     card.className = "product-card";
@@ -38,7 +43,9 @@ function populateFilters() {
   priceInput.max = priceMax;
   priceInput.value = priceMax;
   document.getElementById("price-value").textContent = `$${priceMax}`;
+  
 }
+
 
 // Aplica filtros
 function applyFilters() {
@@ -119,5 +126,5 @@ document.addEventListener("DOMContentLoaded", () => {
   renderCatalog(products);
   populateFilters();
   renderCart();
-  renderCategoryChart();
+  
 });
