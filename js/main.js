@@ -1,3 +1,4 @@
+// Lógica principal del catálogo
 console.log('Catálogo cargado');
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -119,32 +120,3 @@ document.addEventListener("DOMContentLoaded", () => {
   populateFilters();
   renderCart();
 });
-function renderCategoryChart() {
-  const ctx = document.getElementById("categoryChart").getContext("2d");
-  const counts = {};
-
-  products.forEach(p => {
-    counts[p.category] = (counts[p.category] || 0) + 1;
-  });
-
-  const labels = Object.keys(counts);
-  const data = Object.values(counts);
-
-  ctx.clearRect(0, 0, 400, 200);
-  data.forEach((value, i) => {
-    const barHeight = value * 20;
-    ctx.fillStyle = "#0077cc";
-    ctx.fillRect(i * 80 + 30, 200 - barHeight, 40, barHeight);
-    ctx.fillStyle = "#000";
-    ctx.fillText(labels[i], i * 80 + 25, 195);
-  });
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  renderCategoryChart();
-});
-
-if (productList.length === 0) {
-  catalog.innerHTML = "<p>No se encontraron productos.</p>";
-  return;
-}
