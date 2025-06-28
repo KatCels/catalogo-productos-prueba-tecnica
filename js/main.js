@@ -119,4 +119,5 @@ document.addEventListener("DOMContentLoaded", () => {
   renderCatalog(products);
   populateFilters();
   renderCart();
+  renderCategoryChart();
 });
