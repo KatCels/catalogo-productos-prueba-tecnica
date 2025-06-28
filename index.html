@@ -23,9 +23,6 @@
     <select id="filter-category">
       <option value="all">Todas</option>
     </select>
-    
-<input type="number" id="min-price" placeholder="Precio mínimo">
-<input type="number" id="max-price" placeholder="Precio máximo">
 
     <label for="filter-price">Precio máximo:</label>
     <input type="range" id="filter-price" min="0" />
@@ -41,6 +38,9 @@
     <ul id="cart-list"></ul>
     <p id="cart-total">Total: $0</p>
   </aside>
+
+  <canvas id="categoryChart" width="400" height="200"></canvas>
+
 
   <!-- Scripts -->
   <script src="js/data.js"></script>
