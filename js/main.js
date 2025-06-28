@@ -14,7 +14,7 @@ function renderCatalog(productList) {
       <h3>${product.name}</h3>
       <p>Categoría: ${product.category}</p>
       <p>Precio: $${product.price}</p>
-      <button onclick="addToCart(${product.id})">Agregar al carrito</button>
+      <button addEventListener="addToCart(${product.id})">Agregar al carrito</button>
     `;
     catalog.appendChild(card);
   });
@@ -118,6 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderCatalog(products);
   populateFilters();
   renderCart();
+  renderCategoryChart();
 });
 function renderCategoryChart() {
   const ctx = document.getElementById("categoryChart").getContext("2d");
@@ -140,6 +141,8 @@ function renderCategoryChart() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  renderCategoryChart();
-});
+
+if (productList.length === 0) {
+  catalog.innerHTML = "<p>No se encontraron productos.</p>";
+  return;
+}
