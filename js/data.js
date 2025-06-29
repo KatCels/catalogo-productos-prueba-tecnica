@@ -20,7 +20,7 @@ const products = [
     name: "Gorra ajustable",
     price: 15,
     category: "Accesorios",
-    image: "assets/imágenes/gorra-vans.jpg"
+    image: "assets/imágenes/gorra-vans.png"
   },
   {
     id: 4,
