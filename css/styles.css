@@ -1,11 +1,12 @@
 /* Estilos base */
 
 :root {
-  --bg-color: #f4f4f4;
+  --bg-color: #f9f9f9;
   --card-bg: #ffffff;
-  --text-color: #222;
-  --primary: #0077cc;
-  --accent: #f0a500;
+  --text-color: #333;
+  --primary:  #0077cc;
+  --accent: #00cc99;
+  --card-bg: #fff;
 }
 
 body.dark-mode {
@@ -98,6 +99,8 @@ h1, h2 {
 
 .product-card:hover {
   transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-card img {
