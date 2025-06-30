@@ -185,7 +185,7 @@ h1, h2 {
 .product-card button {
   margin-top: 0.5rem;
   background-color: var(--primary);
-  color: rgb(0, 0, 0);
+  color: rgb(10, 5, 71);
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
@@ -221,7 +221,7 @@ h1, h2 {
 }
 
 #cart button {
-  background-color: rgb(108, 167, 255);
+  background-color: rgb(116, 104, 148);
   color: white;
   border: none;
   padding: 0.3rem 0.6rem;
