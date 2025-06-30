@@ -128,3 +128,20 @@ document.addEventListener("DOMContentLoaded", () => {
   renderCart();
   
 });
+
+
+let currentIndex = 0;
+
+function moveSlide(direction) {
+  const slider = document.getElementById("slider");
+  const slides = slider.children.length;
+
+  currentIndex += direction;
+  if (currentIndex < 0) currentIndex = slides - 1;
+  if (currentIndex >= slides) currentIndex = 0;
+
+  slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+// Opcional: desliza automáticamente cada 5 segundos
+setInterval(() => moveSlide(1), 5000);
