@@ -100,7 +100,7 @@ body {
   font-family: 'Arial' , sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
-  padding: 1rem;
+  padding: 0;
   transition: background-color 0.3s, color 0.3s;
 }
 
