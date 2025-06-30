@@ -272,7 +272,7 @@ h1, h2 {
 /* Botones */
 button {
   background-color: var(--primary-color);
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: 600;
   padding: 0.6em 1.2em;
   border-radius: 30px;
