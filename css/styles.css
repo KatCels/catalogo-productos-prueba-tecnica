@@ -6,11 +6,15 @@
 }
 
 .promo-bar {
-  background-color: black;
+  background-color: #ff3c3c; /* rojito llamativo */
   color: white;
   text-align: center;
-  font-size: 0.85rem;
-  padding: 0.3rem 0;
+  font-size: 0.9rem;
+  padding: 0.6rem 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .top-bar {
