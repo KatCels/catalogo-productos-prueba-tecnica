@@ -1,12 +1,12 @@
 /* Encabezado */
 .main-header {
-  background-color: white;
+  background-color: rgb(7, 0, 109);
   border-bottom: 1px solid #eaeaea;
   font-family: 'Inter', sans-serif;
 }
 
 .promo-bar {
-  background-color: #ff3c3c; /* rojito llamativo */
+  background-color: #255da7; 
   color: white;
   text-align: center;
   font-size: 0.9rem;
@@ -100,7 +100,7 @@ body {
   font-family: 'Arial' , sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
-  padding: 0;
+  padding: 1rem;
   transition: background-color 0.3s, color 0.3s;
 }
 
