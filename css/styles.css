@@ -332,3 +332,226 @@ button:hover {
 }
 
 
+
+/* ------------------ BANNER DESLIZANTE ------------------ */
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 400%; /* 4 imágenes = 100% x 4 */
+}
+
+.slide {
+  flex: 1 0 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Botones de navegación */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.3s;
+}
+
+.slider-btn:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}
+
+/* Texto sobre el slider (opcional) */
+.hero-text {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.hero-btn {
+  background-color: var(--accent);
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: var(--primary);
+}
+
+/* ------------------ BARRA DE PROMOCIÓN ------------------ */
+.promo-bar {
+  background: linear-gradient(90deg, #ff3c3c, #ff7f50);
+  color: white;
+  text-align: center;
+  font-size: 0.95rem;
+  padding: 0.7rem 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------ BARRA DE NAVEGACIÓN ------------------ */
+.nav-bar {
+  background-color: #fefefe;
+  border-top: 1px solid #ddd;
+  padding: 0.8rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-bar ul {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-bar a:hover {
+  color: var(--primary);
+}
+/* Botones de navegación */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.3s;
+}
+
+.slider-btn:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}
+
+/* Texto sobre el slider (opcional) */
+.hero-text {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.hero-btn {
+  background-color: var(--accent);
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: var(--primary);
+}
+
+/* ------------------ BARRA DE PROMOCIÓN ------------------ */
+.promo-bar {
+  background: linear-gradient(90deg, #ff3c3c, #ff7f50);
+  color: white;
+  text-align: center;
+  font-size: 0.95rem;
+  padding: 0.7rem 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------ BARRA DE NAVEGACIÓN ------------------ */
+.nav-bar {
+  background-color: #fefefe;
+  border-top: 1px solid #ddd;
+  padding: 0.8rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-bar ul {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-bar a:hover {
+  color: var(--primary);
+}
