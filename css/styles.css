@@ -223,7 +223,7 @@ h1, h2 {
 #cart button {
   background-color: rgb(116, 104, 148);
   color: white;
-  border: none;
+  border: 1px solid #ccc;
   padding: 0.3rem 0.6rem;
   border-radius: 5px;
   cursor: pointer;
@@ -276,7 +276,7 @@ button {
   font-weight: 600;
   padding: 0.6em 1.2em;
   border-radius: 30px;
-  border: none;
+  border: 1px solid #ccc;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
