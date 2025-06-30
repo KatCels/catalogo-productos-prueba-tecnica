@@ -6,7 +6,7 @@
 }
 
 .promo-bar {
-  background-color: #255da7; 
+  background-color: #acd0ff; 
   color: white;
   text-align: center;
   font-size: 0.9rem;
@@ -15,7 +15,7 @@
   letter-spacing: 0.5px;
   font-family: 'Inter', sans-serif;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border: 1px solid limegreen;
+  border: 1px solid rgb(255, 72, 65);
 }
 
 .top-bar {
