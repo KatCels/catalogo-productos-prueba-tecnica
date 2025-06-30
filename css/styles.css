@@ -5,7 +5,7 @@
   font-family: 'Arial', sans-serif;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
-/* ------------------ BANNER DESLIZANTE ------------------ */
+/*  Deslizante  */
 .slider-container {
   position: relative;
   width: 100%;
@@ -68,7 +68,7 @@
 }
 
 
-/* ------------------ BARRA DE PROMOCIÓN ------------------ */
+/* Promoccion */
 
 .promo-bar {
   background: linear-gradient(90deg, #ff3c3c, #ff7f50);
@@ -95,7 +95,7 @@
   align-items: center;
 }
 
-/* ------------------ BARRA DE NAVEGACIÓN ------------------ */
+/* Navegacion */
 .nav-bar {
   background-color: #fefefe;
   border-top: 1px solid #ddd;
@@ -174,7 +174,7 @@
   font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background-color 0.3s;
 }
 
 .hero-btn:hover {
