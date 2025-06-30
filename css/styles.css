@@ -49,7 +49,7 @@
 
 .nav-bar a {
   text-decoration: none;
-  color: #333;
+  color: #000000;
   font-weight: 500;
   transition: color 0.3s;
 }
@@ -86,7 +86,7 @@ body.dark-mode {
   --card-bg: #1e1e1e;
   --text-color: #f9f9f9;
   --primary: #00bcd4;
-  --accent: #ff9800;
+  --accent: #008cff;
 }
 
 * {
