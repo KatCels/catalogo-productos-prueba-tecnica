@@ -281,7 +281,7 @@ button {
 }
 
 button:hover {
-  background-color: #005fa3;
+  background-color: #e3f4ff;
   transform: scale(1.05);
 }
 
