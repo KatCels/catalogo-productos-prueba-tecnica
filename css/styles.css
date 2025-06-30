@@ -236,7 +236,7 @@ h1, h2 {
 }
 
 
-/* ---------- Filtros ---------- */
+/*  Filtros */
 #filters {
   display: flex;
   flex-direction: column;
@@ -253,7 +253,7 @@ h1, h2 {
   font-size: 1rem;
 }
 
-/* ---------- Catálogo con Grid ---------- */
+/* Catálogo con Grid  */
 #product-catalog {
   display: grid;
   grid-template-columns: 1fr;
@@ -309,7 +309,7 @@ h1, h2 {
   background-color: var(--accent);
 }
 
-/* ---------- Carrito ---------- */
+/* Carrito */
 #cart {
   background-color: var(--card-bg);
   padding: 1rem;
