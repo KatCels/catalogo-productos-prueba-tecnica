@@ -1,10 +1,17 @@
 /* Encabezado */
 .main-header {
-  background-color: rgb(255, 210, 210);
-  border-bottom: 1px solid #eaeaea;
+  background: linear-gradient(90deg, #ff5f6d, #ffc371); /* degradado moderno */
+  color: white;
   font-family: 'Arial', sans-serif;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 1.2rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-bottom: none;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: background-color 0.3s ease;
 }
+
 /*  Deslizante  */
 .slider-container {
   position: relative;
