@@ -71,7 +71,7 @@
 /* Promoccion */
 
 .promo-bar {
-  background: linear-gradient(90deg, #000000, #ffffff);
+  background: linear-gradient(0deg, #000000, #ffffff);
   color: white;
   text-align: center;
   font-size: 0.95rem;
