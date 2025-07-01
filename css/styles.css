@@ -1,3 +1,30 @@
+/* Promoccion */
+
+.promo-bar {
+  background: linear-gradient(0deg, #3988ff);
+  color: white;
+  text-align: center;
+  font-size: 0.95rem;
+  padding: 0.7rem 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.header-controls {
+  display: flex;
+  gap: 1rem 2rem;
+  align-items: center;
+}
+
 /* Encabezado */
 .main-header {
   background: linear-gradient(90deg, #ff5f6d, #ffc371); /* degradado moderno */
@@ -74,33 +101,6 @@
   right: 10px;
 }
 
-
-/* Promoccion */
-
-.promo-bar {
-  background: linear-gradient(0deg, #3988ff);
-  color: white;
-  text-align: center;
-  font-size: 0.95rem;
-  padding: 0.7rem 0;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.top-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  flex-wrap: wrap;
-}
-
-.header-controls {
-  display: flex;
-  gap: 1rem 2rem;
-  align-items: center;
-}
 
 /* Navegacion */
 .nav-bar {
