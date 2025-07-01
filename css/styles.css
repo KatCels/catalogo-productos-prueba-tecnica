@@ -291,21 +291,6 @@ h1, h2 {
   font-weight: 500;
 }
 
-#filters {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  max-width: 400px;
-  margin-inline: auto;
-}
-
-#filters select,
-#filters input[type="range"] {
-  padding: 0.5rem;
-  font-size: 1rem;
-}
 
 /* Catálogo con Grid  */
 #product-catalog {
