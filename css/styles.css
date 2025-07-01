@@ -149,13 +149,13 @@
   border-radius: 20px;
   padding: 0.4rem 1rem;
   font-size: 0.9rem;
-  width: 200px;
+  width: 180px;
   transition: box-shadow 0.3s ease;
 }
 
 .search-input:focus {
   outline: none;
-  box-shadow: 0 0 0 2px var(--primary-color-light);
+  box-shadow: 0 0 0 2px var(--primary);
 }
 
 .hero-banner {
