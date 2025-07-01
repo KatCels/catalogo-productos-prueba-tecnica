@@ -50,16 +50,34 @@
   <button class="slider-btn next" onclick="moveSlide(1)">❯</button>
 </section>
 
-  <section id="filters">
-    <label for="filter-category">Categoría:</label>
-    <select id="filter-category">
-      <option value="all">Todas</option>
-    </select>
+<section id="filters">
+  <label for="filter-category">Categoría:</label>
+  <select id="filter-category">
+    <option value="all">Todas</option>
+  </select>
 
-    <label for="filter-price">Precio máximo:</label>
-    <input type="range" id="filter-price" min="0" />
-    <span id="price-value">$0</span>
-  </section>
+  <label for="filter-price">Precio máximo:</label>
+  <input type="range" id="filter-price" min="0" />
+  <span id="price-value">$0</span>
+</section>
+
+<section id="filters" class="filters-toolbar">
+  <div class="filter-group">
+    <select id="filter-category">
+      <option value="all">Todas las categorías</option>
+    </select>
+  </div>
+
+  <div class="filter-group">
+    <input type="text" class="search-input" placeholder="Buscar productos...">
+  </div>
+
+  <div class="filter-group range-group">
+    <label for="filter-price">Hasta: <span id="price-value">$0</span></label>
+    <input type="range" id="filter-price" min="0">
+  </div>
+</section>
+
 
   <main>
     <section id="product-catalog"></section>
